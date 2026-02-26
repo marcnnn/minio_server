@@ -33,6 +33,7 @@ defmodule MinioServer.MixProject do
   defp deps do
     [
       {:muontrap, "~> 0.5.0"},
+      {:x509, "~> 0.9"},
       {:jason, "~> 1.1"},
       {:ex_aws, "~> 2.0", optional: true},
       {:ex_aws_s3, "~> 2.2", only: [:dev, :test]},

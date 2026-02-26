@@ -64,8 +64,9 @@ defmodule MinioServer.Admin do
     secret = Keyword.fetch!(config, :secret_access_key)
     host = Keyword.get(config, :host, "127.0.0.1")
     port = Keyword.get(config, :port, 9000)
+    scheme = if Keyword.has_key?(config, :certs_dir), do: "https", else: "http"
 
-    {"MC_HOST_#{@alias}", "http://#{key}:#{secret}@#{host}:#{port}"}
+    {"MC_HOST_#{@alias}", "#{scheme}://#{key}:#{secret}@#{host}:#{port}"}
   end
 
   defp mc do

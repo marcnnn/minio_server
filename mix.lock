@@ -21,4 +21,5 @@
   "sweet_xml": {:hex, :sweet_xml, "0.7.1", "a2cac8e2101237e617dfa9d427d44b8aff38ba6294f313ffb4667524d6b71b98", [:mix], [], "hexpm", "8bc7b7b584a6a87113071d0d2fd39fe2251cf2224ecaeed7093bdac1b9c1555f"},
   "telemetry": {:hex, :telemetry, "0.4.3", "a06428a514bdbc63293cd9a6263aad00ddeb66f608163bdec7c8995784080818", [:rebar3], [], "hexpm", "eb72b8365ffda5bed68a620d1da88525e326cb82a75ee61354fc24b844768041"},
   "unicode_util_compat": {:hex, :unicode_util_compat, "0.7.0", "bc84380c9ab48177092f43ac89e4dfa2c6d62b40b8bd132b1059ecc7232f9a78", [:rebar3], [], "hexpm", "25eee6d67df61960cf6a794239566599b09e17e668d3700247bc498638152521"},
+  "x509": {:hex, :x509, "0.9.2", "a75aa605348abd905990f3d2dc1b155fcde4e030fa2f90c4a91534405dce0f6e", [:mix], [], "hexpm", "4c5ede75697e565d4b0f5be04c3b71bb1fd3a090ea243af4bd7dae144e48cfc7"},
 }

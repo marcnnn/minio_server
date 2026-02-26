@@ -16,6 +16,20 @@ s3_config = [
   minio_path: "data" # Defaults to ./minio in your mix project
 ]
 
+# HTTPS (with TLS) — required for SSE-C encryption
+# Self-signed certs are auto-generated if public.crt and private.key
+# don't exist in the certs_dir yet.
+s3_config = [
+  access_key_id: "minio_key",
+  secret_access_key: "minio_secret",
+  scheme: "https://",
+  region: "local",
+  host: "127.0.0.1",
+  port: 9000,
+  minio_path: "data",
+  certs_dir: "/path/to/certs"
+]
+
 # In a supervisor
 children = [
   {MinioServer, s3_config}
