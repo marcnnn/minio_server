@@ -17,8 +17,8 @@ defmodule MinioServer do
       ]
 
       # HTTPS (with TLS) — required for SSE-C encryption
-      # Self-signed certs are auto-generated if public.crt and private.key
-      # don't exist in the certs_dir yet.
+      # Self-signed certs are auto-generated if both public.crt and 
+      # private.key don't exist in the certs_dir yet.
       s3_config = [
         access_key_id: "minio_key",
         secret_access_key: "minio_secret",
